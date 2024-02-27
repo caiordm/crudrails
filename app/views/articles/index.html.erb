@@ -1,0 +1,11 @@
+<h1>Primeiro CRUD com RoR</h1>
+
+<ul>    
+    <% @articles.each do |article| %>
+    <li>
+        <%= link_to article.titles, article %>
+    </li>
+    <% end %>
+
+    <%= link_to "New Article", new_article_path %>
+</ul>  
